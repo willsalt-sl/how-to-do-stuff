@@ -593,7 +593,7 @@ You can specify default values for some "optional" parameters, so long as all fo
 
 ```
 public int ExampleMethod(int x, int y, double twist = 0d) { ... }
-// ^ can be called as ExampleMethod(x, y) or as ExampleMethd(x, y, twist)
+// ^ can be called as ExampleMethod(x, y) or as ExampleMethod(x, y, twist)
 
 public int ExampleMethod(int x = 0, int y = 0, double twist = 0d) { ... }
 // ^ can be called as ExampleMethod(), ExampleMethod(x), ExampleMethod(x, y) or as ExampleMethod(x, y, twist)
@@ -1328,12 +1328,12 @@ The full operator precedence table is below.  Operators in the same row take pre
 | `x == y`, `x != y` | Equality and inequality | |
 | `x & y` | Boolean AND | Either bitwise or logical depending on the type of the operands |
 | `x ^ y` | Boolean XOR | Either bitwise or logical depending on the type of the operands |
-| `x | y` | Boolean OR | Either bitwise or logical depending on the type of the operands |
+| `x \| y` | Boolean OR | Either bitwise or logical depending on the type of the operands |
 | `x && y` | Logical conditional AND | |
-| `x || y` | Logical conditional OR | |
+| `x \|\| y` | Logical conditional OR | |
 | `x ?? y` | Null-coalescing operator | Right-associative and conditional |
 | `c ? t : f` | The conditional operator | Right-associative and conditional |
-| `x = y`, `x += y`, `x -= y`, `x *= y`, `x /= y`,  `x %= y`, `x &= y`, `x |= y`, `x ^= y`, `x <<= y`, `x >>= y`, `x ??= y`, `=>` | Assignment operators and the lambda definition operator | The lambda definition operator (`=>`) is discussed in the section on lambdas and delegates. |
+| `x = y`, `x += y`, `x -= y`, `x *= y`, `x /= y`,  `x %= y`, `x &= y`, `x \|= y`, `x ^= y`, `x <<= y`, `x >>= y`, `x ??= y`, `=>` | Assignment operators and the lambda definition operator | The lambda definition operator (`=>`) is discussed in the section on lambdas and delegates. |
 
 As you can see in the table, most binary operators are normally written with a space either side of the operator symbol(s), but some, such as the member access operator, are not.  Unary operators are normally written with no space between the operator and the operand, and almost always precede the operand, the exceptions being `x++` and `x--`.
 
