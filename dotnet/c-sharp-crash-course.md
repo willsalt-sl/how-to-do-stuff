@@ -1624,6 +1624,8 @@ DoSomething((byte)42); // A hypothetical method with DoSomething(int x) and DoSo
 
 String literals come in three flavours: regular, verbatim and interpolated.  Regular string literals are the sort most often seen, delimited by `"`.  Within a regular string literal, the backslash character is used to define an escape sequence, used to insert a delimiter or a control character.  The C# escape sequences are as follows, with `H` representing a compulsary and `h` representing an optional hexadecimal digit:
 
+| Escape sequence | Meaning |
+| --- | --- |
 | `\'` | Single quote |
 | `\"` | Double quote |
 | `\\` | Backslash |
