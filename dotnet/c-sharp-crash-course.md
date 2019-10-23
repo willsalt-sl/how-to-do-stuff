@@ -167,23 +167,23 @@ Types can be nested, to some extent.  Any kind of type can be nested inside a cl
 
 Each built-in type which can be instantiated has a fully-qualified name (which is the same across all CLI languages) and a C# keyword which can be used as a synonym; the convention is to use the keyword in code where possible.  The built-in types and their keywords are:
 
-| Type | Keyword | Constant suffix | Notes |
-| ---- | ------- | ----- | --- |
-| System.Object | object | | Reference type |
-| System.String | string | | Reference type |
-| System.Boolean | bool | | |
-| System.Byte | byte | | Unsigned |
-| System.SByte | sbyte | | Signed.  Not a CLS type |
-| System.Char | char | | |
-| System.Int16 | short | | Signed |
-| System.UInt16 | ushort | | Unsigned.  Not a CLS type |
-| System.Int32 | int | | Signed |
-| System.UInt32 | uint | `U` | Unsigned.  Not a CLS type |
-| System.Int64 | long | `L` | Signed |
-| System.UInt64 | ulong | `UL` | Unsigned.  Not a CLS type |
-| System.Decimal | decimal | `M` | Fixed-precision |
-| System.Single | float | `F` | Single-precision floating point |
-| System.Double | double | `D` | Double-precision floating point |
+| Type           | Keyword | Constant suffix | Notes                            |
+| -------------- | ------- | --------------- | -------------------------------- |
+| System.Object  | object  |                 | Reference type.                  |
+| System.String  | string  |                 | Reference type.                  |
+| System.Boolean | bool    |                 |                                  |
+| System.Byte    | byte    |                 | Unsigned.                        |
+| System.SByte   | sbyte   |                 | Signed.  Not a CLS type.         |
+| System.Char    | char    |                 |                                  |
+| System.Int16   | short   |                 | Signed.                          |
+| System.UInt16  | ushort  |                 | Unsigned.  Not a CLS type.       |
+| System.Int32   | int     |                 | Signed.                          |
+| System.UInt32  | uint    | `U`             | Unsigned.  Not a CLS type.       |
+| System.Int64   | long    | `L`             | Signed.                          |
+| System.UInt64  | ulong   | `UL`            | Unsigned.  Not a CLS type.       |
+| System.Decimal | decimal | `M`             | Fixed-precision.                 |
+| System.Single  | float   | `F`             | Single-precision floating point. |
+| System.Double  | double  | `D`             | Double-precision floating point. |
 
 Types in the above table are value types unless otherwise noted.
 
@@ -299,14 +299,14 @@ Every type and member of a type has an access level, whether specified explicitl
 
 The allowed access modifiers (and combinations) and their meaning are:
 
-| Modifier(s) | Allowed at top level | Meaning |
-| --- | --- |
-| `public` | Yes | Unrestricted access from any code |
-| `protected` | No | Can only be accessed from the same class or derived classes |
-| `internal` | Yes | Can only be accessed from the same assembly or specific assemblies |
-| `protected internal` | No | Equivalent to `protected` OR `internal` |
-| `private` | No | Can only be accessed from the same type |
-| `private protected` | No | Can only be accessed from the same type, or derived classes within the same assembly |
+| Modifier(s)          | Allowed at top level | Meaning                                                                               |
+| -------------------- | -------------------- | ------------------------------------------------------------------------------------- |
+| `public`             | Yes                  | Unrestricted access from any code.                                                    |
+| `protected`          | No                   | Can only be accessed from the same class or derived classes.                          |
+| `internal`           | Yes                  | Can only be accessed from the same assembly or specific assemblies.                   |
+| `protected internal` | No                   | Equivalent to `protected` OR `internal`.                                              |
+| `private`            | No                   | Can only be accessed from the same type.                                              |
+| `private protected`  | No                   | Can only be accessed from the same type, or derived classes within the same assembly. |
 
 The `private protected` modifier combination was only introduced in C# v7.2, in late 2017.
 
