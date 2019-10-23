@@ -168,7 +168,7 @@ Types can be nested, to some extent.  Any kind of type can be nested inside a cl
 Each built-in type which can be instantiated has a fully-qualified name (which is the same across all CLI languages) and a C# keyword which can be used as a synonym; the convention is to use the keyword in code where possible.  The built-in types and their keywords are:
 
 | Type | Keyword | Constant suffix | Notes |
-| ---- | ------- | ----- |
+| ---- | ------- | ----- | --- |
 | System.Object | object | | Reference type |
 | System.String | string | | Reference type |
 | System.Boolean | bool | | |
